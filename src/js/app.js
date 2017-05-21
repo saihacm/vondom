@@ -5,5 +5,10 @@ angular.module('angularGruntSeed', [
     'ngAnimate',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
-]);
+    'ui.router',
+    'ui.bootstrap'
+])
+    .controller('mainController', ['$scope',
+        function ($scope, gridService) {
+        }
+    ]);

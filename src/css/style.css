@@ -52,7 +52,7 @@
 @font-face {
     font-family: 'Minion';
     font-weight: 600;
-    font-style: italic
+    font-style: italic;
     src: url('../fonts/MinionProSemiboldIt.eot');
     src: url('../fonts/MinionProSemiboldItd41d.eot?#iefix') format('embedded-opentype'),
     url('../fonts/MinionProSemiboldIt.woff') format('woff'),
@@ -175,7 +175,7 @@
     @font-face {
         font-family: 'Minion';
         font-weight: 600;
-        font-style: italic
+        font-style: italic;
         src: url('../fonts/MinionProSemiboldIt.svg#MinionProSemiboldIt') format('svg');
     }
     @font-face {
@@ -186,7 +186,7 @@
         font-family: 'GoboldThin';
         src: url('../fonts/GoboldThin.svg#GoboldThin') format('svg');
     }
-    font-face {
+    @font-face {
         font-family: 'BebasNeueLight';
         src: url('../fonts/BebasNeueLight.svg#BebasNeueLight') format('svg');
     }
@@ -705,7 +705,7 @@ nav .lang-switcher {
     top: 37px;
     right: 30px;
     width: 30px;
-    background: url(img/lang_icon.png) no-repeat left center;
+    background: url(../img/images/lang_icon.png) no-repeat left center;
     padding-left: 30px;
     background-size: 22px auto;
 }
@@ -715,7 +715,7 @@ nav .lang-switcher:hover {
 }
 
 nav .lang-switcher.esp {
-    background: url(img/lang_icon_es.png) no-repeat left center;
+    background: url(../img/images/lang_icon_es.png) no-repeat left center;
     background-size: 22px auto;
 }
 
@@ -820,7 +820,7 @@ nav .lang-switcher.has-dropdown a:hover {
 
 #mobile-menu ul li a.back {
     color: rgba(0, 0, 0, 0.5);
-    background: url(img/back_icon.png) no-repeat left center;
+    background: url(../img/images/back_icon.png) no-repeat left center;
 }
 
 #close_mobile-menu {
@@ -1104,7 +1104,7 @@ body > footer {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url('img/rallado.png');
+    background-image: url('../img/images/rallado.png');
     background-repeat: repeat-x;
     background-position: 0 12px;
     z-index: 98;
@@ -1193,7 +1193,7 @@ footer .content > p.pie {
     display: block;
     width: 22px;
     height: 20px;
-    background-image: url('img/icon-social.png');
+    background-image: url('../img/images/icon-social.png');
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -1284,7 +1284,7 @@ footer .content > p.pie {
 }
 
 .icon-newsletter {
-    background: url("img/icon-newsletter.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/images/icon-newsletter.png") no-repeat scroll left top rgba(0, 0, 0, 0);
     display: table;
     height: 28px;
     margin: 3px auto 4px;
@@ -1320,7 +1320,7 @@ footer .content > p.pie {
 /************************************************/
 
 .img-portada {
-    background: url(images/landing-miami/portada4.jpg) no-repeat center center;
+    background: url(../img/images/landing-miami/portada4.jpg) no-repeat center center;
     background-size: cover;
     top: 0;
     margin-top: -50px;
@@ -1428,7 +1428,7 @@ footer .content > p.pie {
 }
 
 .section-wallart {
-    background: url(images/landing-miami/portada4.jpg) no-repeat center center;
+    background: url(../img/images/landing-miami/portada4.jpg) no-repeat center center;
     background-size: cover;
     margin-top: 80px;
     padding: 40px 0 60px 0;
@@ -1455,7 +1455,7 @@ footer .content > p.pie {
 }
 
 .opening-party {
-    background: url(images/landing-miami/portada4.jpg) no-repeat center center;
+    background: url(../img/images/landing-miami/portada4.jpg) no-repeat center center;
     background-size: cover;
     margin-top: 80px;
     padding: 80px 0 80px 0;
@@ -1492,7 +1492,7 @@ footer .content > p.pie {
 }
 
 .bonus-track {
-    background: url(images/landing-miami/portada4.jpg) no-repeat center center;
+    background: url(../img/images/landing-miami/portada4.jpg) no-repeat center center;
     background-size: cover;
     margin-top: 80px;
     padding: 40px 0 80px 0;
@@ -1963,11 +1963,11 @@ nav.collection a:hover p.box {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(images/ico_play.png) no-repeat center center;
+    background: url(../img/images/ico_play.png) no-repeat center center;
 }
 
 .texto-slider .play_video {
-    background: url(images/ico_play_150.png) no-repeat center center;
+    background: url(../img/images/ico_play_150.png) no-repeat center center;
     background-size: 150px 150px;
 
 }
@@ -2310,7 +2310,7 @@ aside p.frase_vondom {
 }
 
 .group.single-coleccion {
-    width: 100;
+    width: 100%;
     padding: 0 5%;
 
 }
@@ -2693,7 +2693,7 @@ section.ficha-producto .span_6_of_12 {
 }
 
 .icon-candado {
-    background-image: url("img/candado.gif");
+    background-image: url("../img/images/candado.gif");
     background-position: 3px 0;
     background-repeat: no-repeat;
     background-size: auto 36px;
@@ -2708,7 +2708,7 @@ a:hover .icon-candado, a.active .icon-candado {
 }
 
 .icon-descarga {
-    background-image: url("img/descarga.gif");
+    background-image: url("../img/images/descarga.gif");
     background-position: 3px -1px;
     background-repeat: no-repeat;
     background-size: auto 36px;
@@ -2797,7 +2797,7 @@ a:hover .icon-descarga {
 }
 
 .tools {
-    background-image: url("img/tools.png");
+    background-image: url("../img/images/tools.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: auto 25px;
@@ -2869,7 +2869,7 @@ a:hover .icon-descarga {
 }
 
 .creadores .texto h2 {
-    /*background-image: url("img/tuscan-good-life.png");*/
+    /*background-image: url("../img/images/tuscan-good-life.png");*/
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 300px auto;
@@ -3143,7 +3143,7 @@ p.botones {
 }
 
 .cuadro_color.no_color {
-    background: url(images/no_color.png) no-repeat center center;
+    background: url(../img/images/no_color.png) no-repeat center center;
 }
 
 .cuadro_color .img_textil {
@@ -3288,7 +3288,7 @@ ul.renders2d a:hover .icon-candado, ul.renders3d a:hover .icon-candado, ul.rende
 
 /****************************** CONTACT ****************************/
 body.registro {
-    background-image: url("img/fodo_contacto.jpg");
+    background-image: url("../img/images/fodo_contacto.jpg");
     background-position: center center;
     background-size: 100% auto;
     min-height: 300px;
@@ -3446,7 +3446,7 @@ button.ui-multiselect {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-image: url('img/arrow-down.gif');
+    background-image: url('../img/images/arrow-down.gif');
     background-repeat: no-repeat;
     background-position: 95% center;
     text-align: left;
@@ -3499,7 +3499,7 @@ option {
 }
 
 .iconTipo {
-    background-image: url("img/iconos-tipology.gif");
+    background-image: url("../img/images/iconos-tipology.gif");
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: inline-block;
@@ -3759,7 +3759,6 @@ nav.migas {
     display: block;
 
     margin-top: 5px;
-    font-weight: 110%;
     font-size: 110%;
 }
 
@@ -3958,7 +3957,7 @@ nav.migas {
 }
 
 .icon-color {
-    background-image: url(img/icon-social-color.png);
+    background-image: url(../img/images/icon-social-color.png);
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
@@ -4211,7 +4210,7 @@ body.page-template-page-vondom-tv .columnas_filter aside li a:hover {
 #slider-videos-destacados .owl-prev {
     width: 23px;
     height: 31px;
-    background: url(images/arrow_left_minimal.png) no-repeat center center;
+    background: url(../img/images/arrow_left_minimal.png) no-repeat center center;
     margin-left: -30px;
     overflow: hidden;
     text-indent: -60px;
@@ -4220,7 +4219,7 @@ body.page-template-page-vondom-tv .columnas_filter aside li a:hover {
 #slider-videos-destacados .owl-next {
     width: 23px;
     height: 31px;
-    background: url(images/arrow_right_minimal.png) no-repeat center center;
+    background: url(../img/images/arrow_right_minimal.png) no-repeat center center;
     margin-right: -30px;
     overflow: hidden;
     text-indent: -60px;
@@ -4552,7 +4551,7 @@ span.wppb-form-error {
     margin-bottom: 10px;
     margin-top: 6px;
     width: 100%;
-    border-radius: none;
+    border-radius: inherit;
 }
 
 .registroPrensa option {
@@ -4583,7 +4582,7 @@ span.wppb-form-error {
 }
 
 .page-template-page-music {
-    background-image: url("images/bk_vondom_music.jpg");
+    background-image: url("../img/images/bk_vondom_music.jpg");
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -4624,7 +4623,7 @@ span.wppb-form-error {
 /*Registro_prensa *****************************/
 
 div.registroPrensaBk {
-    background-image: url("images/form-press-bg.jpg");
+    background-image: url("../img/images/form-press-bg.jpg");
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -4727,7 +4726,7 @@ section.registroPrensa {
 }
 
 div.VondomEventsBK {
-    background-image: url("images/bk_vondomevents.jpg");
+    background-image: url("../img/images/bk_vondomevents.jpg");
     background-size: cover;
     width: 100%;
     min-height: 300px;
@@ -4836,7 +4835,7 @@ presskit .cleanHeader {
 }
 
 .press_room .col .descarga {
-    background-image: url("img/descarga-dorada.gif");
+    background-image: url("../img/images/descarga-dorada.gif");
     background-size: 18px auto;
     height: 19px;
     margin: 10px auto 30px;
@@ -4884,7 +4883,7 @@ presskit .cleanHeader {
 }
 
 .btn-presskit .icon-descarga {
-    background-image: url("img/descargaBN.png");
+    background-image: url("../img/images/descargaBN.png");
     background-size: 31px auto;
     background-position: center top;
     height: 32px;
@@ -4967,7 +4966,7 @@ a:hover .btn-presskit {
     padding-top: 1px;
     padding-left: 22px;
     background-repeat: no-repeat;
-    background-image: url("img/telefono.gif");
+    background-image: url("../img/images/telefono.gif");
     font-size: 110%;
 }
 
@@ -4994,7 +4993,7 @@ a:hover .btn-presskit {
 }
 
 .page-template-page-contact .fauxFooter {
-    background-image: url("images/contact-footer-bg.jpg");
+    background-image: url("../img/images/contact-footer-bg.jpg");
     background-repeat: repeat;
     margin: 5%;
     padding: 20px 50px;
@@ -5404,7 +5403,7 @@ a:hover .btn-presskit {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box;
-    Â  bottom: -30px;
+    bottom: -30px;
 }
 
 .imageContainer div.wpcf7-response-output {
@@ -5449,7 +5448,6 @@ a:hover .btn-presskit {
     top: 0px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    Â 
 }
 
 div.wpcf7 {
@@ -5472,14 +5470,14 @@ div.wpcf7 {
     width: 22px;
     height: 22px;
     display: block;
-    background: url(images/lightbox/close.png) no-repeat center center;
+    background: url(../img/images/lightbox/close.png) no-repeat center center;
 }
 
 #cookie_box {
     height: 240px;
     width: 240px;
     border-radius: 120px;
-    background: url(images/bk_cookies.png) no-repeat center center rgba(129, 68, 14, 0.75);
+    background: url(../img/images/bk_cookies.png) no-repeat center center rgba(129, 68, 14, 0.75);
     position: fixed;
     bottom: 10px;
     left: 10px;
@@ -5536,7 +5534,7 @@ div.wpcf7 {
     display: block;
     width: 51px;
     height: 51px;
-    background: url(img/share.png) no-repeat 0 0;
+    background: url(../img/images/share.png) no-repeat 0 0;
     -webkit-transition: all .25s ease .1s;
     -moz-transition: all .25s ease .1s;
     -o-transition: all .25s ease .1s;
@@ -5564,7 +5562,7 @@ div.wpcf7 {
     display: block;
     width: 51px;
     height: 51px;
-    background: url(img/backtotop.png) no-repeat 0 0;
+    background: url(../img/images/backtotop.png) no-repeat 0 0;
     -webkit-transition: all .25s ease .1s;
     -moz-transition: all .25s ease .1s;
     -o-transition: all .25s ease .1s;
@@ -5652,7 +5650,7 @@ div.wpcf7 {
 
 .mobileScroll .mouse {
     border: none;
-    background: url(img/dedo.png) no-repeat center top;
+    background: url(../img/images/dedo.png) no-repeat center top;
     background-size: 30px auto;
     height: 60px;
     width: 30px;
@@ -6034,15 +6032,15 @@ div.wpcf7 {
 }
 
 .event-details .lugar {
-    background: url(images/ico-event-lugar.png) no-repeat left top;
+    background: url(../img/images/ico-event-lugar.png) no-repeat left top;
 }
 
 .event-details .hora {
-    background: url(images/ico-event-clock.png) no-repeat left top;
+    background: url(../img/images/ico-event-clock.png) no-repeat left top;
 }
 
 .event-details .precio {
-    background: url(images/ico-event-precio.png) no-repeat left top;
+    background: url(../img/images/ico-event-precio.png) no-repeat left top;
 }
 
 .event-details .read_more {

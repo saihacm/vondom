@@ -7,7 +7,12 @@ module.exports = {
         ],
         tasks: ['newer:copy:images']
     },
-
+    assets: {
+        files: [
+            'src/assets/**/*.*'
+        ],
+        tasks: ['newer:copy:assets']
+    },
     css: {
         files: [
             'src/css/*.css'
@@ -29,8 +34,8 @@ module.exports = {
         tasks: ['less:devbuild']
     },
     htmljs: {
-        files: ['src/index.html','src/js/*.js','src/components/**/*.js'],
-        tasks: ['useminPrepare','copy:build','concat','copy:temptobuild','usemin','newer:jshint:all']
+        files: ['src/index.html', 'src/js/*.js', 'src/components/**/*.js'],
+        tasks: ['useminPrepare', 'copy:build', 'concat', 'copy:temptobuild', 'usemin', 'newer:jshint:all']
     },
 //    grunt: {
 //        files: [

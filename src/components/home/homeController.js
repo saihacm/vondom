@@ -2,8 +2,8 @@
 
 angular.module('angularGruntSeed')
 
-.controller('HomeController', ['$scope',
-    function($scope, gridService) {
-        console.log('HomeController called .................');
-    }
-]);
+    .controller('HomeController', ['$scope',
+        function ($scope, gridService) {
+
+        }
+    ]);

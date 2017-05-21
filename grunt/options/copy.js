@@ -71,5 +71,16 @@ module.exports = {
                 expand  : true
             }
         ]
+    },
+    assets: {
+        files: [
+            {
+                cwd     : 'src/assets/',
+                src     : '**/*',
+                dest    : '.build/assets/',
+                flatten : false,
+                expand  : true
+            }
+        ]
     }
 };
