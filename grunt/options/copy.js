@@ -39,10 +39,21 @@ module.exports = {
             }
         ]
     },
+    fonts: {
+        files: [
+            {
+                cwd     : 'src/fonts/',
+                src     : '**/*',
+                dest    : '.build/fonts/',
+                flatten : false,
+                expand  : true
+            }
+        ]
+    },
     images: {
         files: [
             {
-                cwd     : 'src/img/dest/',
+                cwd     : 'src/img/',
                 src     : '**/*',
                 dest    : '.build/img/',
                 flatten : false,

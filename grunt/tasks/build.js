@@ -21,6 +21,7 @@ module.exports = function(grunt) {
         grunt.task.run('copy:css');
         grunt.task.run('copy:images');
         grunt.task.run('copy:js');
+        grunt.task.run('copy:fonts');
         grunt.task.run('jshint:all');
     });
 };

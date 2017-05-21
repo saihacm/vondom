@@ -3,7 +3,7 @@
 module.exports = {
     images: {
         files: [
-            'src/img/dest/*.*'
+            'src/img/*.*'
         ],
         tasks: ['newer:copy:images']
     },
@@ -13,6 +13,13 @@ module.exports = {
             'src/css/*.css'
         ],
         tasks: ['newer:copy:css']
+    },
+
+    fonts: {
+        files: [
+            'src/fonts/*.*'
+        ],
+        tasks: ['newer:copy:fonts']
     },
     less: {
         files: [
