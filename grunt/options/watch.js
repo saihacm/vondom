@@ -7,6 +7,13 @@ module.exports = {
         ],
         tasks: ['newer:copy:images']
     },
+
+    css: {
+        files: [
+            'src/css/*.css'
+        ],
+        tasks: ['newer:copy:css']
+    },
     less: {
         files: [
             'src/css/**/*.less',
