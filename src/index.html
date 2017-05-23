@@ -1,85 +1,271 @@
 <!doctype html>
 <html lang="en" ng-app="angularGruntSeed">
-
 <head>
     <title>Vondom</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <!-- build:css css/modules.css -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- endbuild -->
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/col.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/outdatedbrowser.min.css" rel="stylesheet">
+    <link href="css/genericons.css" rel="stylesheet">
 
 </head>
 
 <body ng-controller="mainController">
+<div id="mobile-menu">
+    <ul>
+        <li><a href="http://www.vondom.com/">Home</a></li>
+        <li><a href="" class="has_submenu">We are!</a>
+            <ul class="submenu">
+                <li><a href="#" class="back">We are!!</a></li>
+                <li><a href="http://www.vondom.com/about/">About</a></li>
+                <li><a href="http://www.vondom.com/designers/">Designers</a></li>
+                <li><a href="http://www.vondom.com/event/">Events</a></li>
+                <li><a href="http://www.vondom.com/new-flagship-store-miami/">New Flagship Store Miami</a></li>
+            </ul>
+        </li>
+        <li><a href="" class="has_submenu">Products</a>
+            <ul class="submenu">
+                <li><a href="#" class="back">Products</a></li>
+                <li><a href="http://www.vondom.com/categories/">Categories</a></li>
+                <li><a href="http://www.vondom.com/collections/">Collections</a></li>
+                <li><a href="http://www.vondom.com/catalogs/">Catalogs</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.vondom.com/vondom-news/">News</a></li>
 
-    <header class="portada">
-        <nav class="mobileHeader">
-            <div class="content">
-                <a href="index.html" class="logo"><img src="img/temp.jpg" /></a>
-                <a href="#" class="menu_icon"><img src="img/temp.jpg" /></a>
+
+        <li><a href="http://www.vondom.com/atmospheres/">Atmospheres</a></li>
+        <li><a href="http://www.vondom.com/vondom-tv/">Video</a></li>
+        <li><a href="http://www.vondom.com/vondom-music/">Music</a></li>
+
+        <li><a href="" class="has_submenu">Downloads</a>
+            <ul class="submenu">
+                <li><a href="#" class="back">Downloads</a></li>
+                <li><a href="http://www.vondom.com/press/">Press Room</a></li>
+                <li><a href="http://www.vondom.com/downloads/">Professionals</a></li>
+            </ul>
+        </li>
+
+
+        <li><a href="http://www.vondom.com/contact/">Contact</a></li>
+        <li class="lang-selector">
+            <a href="http://www.vondom.com/?l=en">EN</a> / <a href="http://www.vondom.com/es">ES / <a
+                href="http://www.vondom.com/fr?l=fr">FR</a>
+        </li>
+    </ul>
+
+    <a href="#" id="close_mobile-menu"><img
+            src="http://www.vondom.com/wp-content/themes/vondom/img/close_icon.png"/></a>
+
+
+</div>
+
+<header class="portada">
+    <nav class="mobileHeader">
+        <div class="content">
+            <a href="index.html" class="logo"><img src="img/temp.jpg"/></a>
+            <a href="#" class="menu_icon"><img src="img/images/menu_icon.png"/></a>
+        </div>
+    </nav>
+
+    <nav class="primary menuFixed darkMenu_no">
+        <div class="content">
+            <table class="menu-principal">
+                <tbody>
+                <tr>
+                    <td colspan="7"></td>
+
+                    <td><a href="#search" class="toggle-search uppertext">search </a>
+                        <form method="get" id="search_form" action="http://www.vondom.com/"><input name="s"
+                                                                                                   placeholder="Search..."
+                                                                                                   type="text"/>
+                            <button>></button>
+                        </form>
+                    </td>
+                    <td class="noborder"><a href="#suscribe" class="open_popup toggle-lightbox uppertext"
+                                            ref="box_newsletter">subscribe</a></td>
+                </tr>
+                <tr class="fila2">
+                    <td class="logo_td">
+                        <a href="index.html"><img src="img/temp.jpg"/></a>
+                    </td>
+                    <td><a href="#">We are!</a>
+                        <ul class="submenu">
+                            <li><a href="about/index.html">About</a></li>
+                            <li><a href="designers/index.html">Designers</a></li>
+                            <li><a href="event/index.html">Events</a></li>
+                            <li><a href="new-flagship-store-miami/index.html">New Flagship Store Miami</a></li>
+
+                        </ul>
+                    </td>
+                    <td>
+                        <a href="#">Products</a>
+                        <ul class="submenu">
+                            <li><a href="categories/index.html">Categories</a></li>
+                            <li><a href="collections/index.html">Collections</a></li>
+                            <li><a href="catalogs/index.html">Catalogs</a></li>
+                        </ul>
+                    </td>
+                    <td><a href="vondom-news/index.html">News</a>
+                    </td>
+                    <td><a href="atmospheres/index.html">Atmospheres</a></td>
+                    <td><a href="vondom-tv/index.html">Video</a></td>
+                    <td><a href="vondom-music/index.html">Music</a></td>
+                    <td><a href="#">Downloads</a>
+                        <ul class="submenu">
+                            <li><a href="press/index.html">Press Room</a></li>
+                            <li><a href="downloads/index.html">Professionals</a></li>
+                        </ul>
+                    </td>
+                    <td><a href="contact/index.html">Contact</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="lang-switcher has-dropdown eng">
+                <a href="enjoy-the-holidays/indexd8cc.html?l=en" class="es_sel">VN</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <nav class="primary menuFixed darkMenu_no">
-            <div class="content">
-                <table class="menu-principal">
-                    <tbody>
-                        <tr>
-                            <td colspan="7"></td>
+    <div id="slider-home" class="owl-carousel owl-theme ">
 
-                            <td><a href="#search" class="toggle-search uppertext">search </a>
-                                <form method="get" id="search_form" action="http://www.vondom.com/"><input name="s" placeholder="Search..." type="text" />
-                                    <button>></button>
-                                </form>
-                            </td>
-                            <td class="noborder"><a href="#suscribe" class="open_popup toggle-lightbox uppertext" ref="box_newsletter">subscribe</a></td>
-                        </tr>
-                        <tr class="fila2">
-                            <td class="logo_td">
-                                <a href="index.html"><img src="img/temp.jpg" /></a>
-                            </td>
-                            <td><a href="#">We are!</a>
-                                <ul class="submenu">
-                                    <li><a href="about/index.html">About</a></li>
-                                    <li><a href="designers/index.html">Designers</a></li>
-                                    <li><a href="event/index.html">Events</a></li>
-                                    <li><a href="new-flagship-store-miami/index.html">New Flagship Store Miami</a></li>
 
-                                </ul>
-                            </td>
-                            <td>
-                                <a href="#">Products</a>
-                                <ul class="submenu">
-                                    <li><a href="categories/index.html">Categories</a></li>
-                                    <li><a href="collections/index.html">Collections</a></li>
-                                    <li><a href="catalogs/index.html">Catalogs</a></li>
-                                </ul>
-                            </td>
-                            <td><a href="vondom-news/index.html">News</a>
-                            </td>
-                            <td><a href="atmospheres/index.html">Atmospheres</a></td>
-                            <td><a href="vondom-tv/index.html">Video</a></td>
-                            <td><a href="vondom-music/index.html">Music</a></td>
-                            <td><a href="#">Downloads</a>
-                                <ul class="submenu">
-                                    <li><a href="press/index.html">Press Room</a></li>
-                                    <li><a href="downloads/index.html">Professionals</a></li>
-                                </ul>
-                            </td>
-                            <td><a href="contact/index.html">Contact</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="lang-switcher has-dropdown eng">
-                    <a href="enjoy-the-holidays/indexd8cc.html?l=en" class="es_sel">VN</a>
-                </div>
+        <div class="item ">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    &nbsp;
+
+                </p>
+
             </div>
-        </nav>
+
+
+            <img src="img/carousel1.jpg" alt="">
+
+
+        </div>
+
+
+        <div class="item align_left">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    <a href="http://www.vondom.com/collections/vela/" class="hovercolor" ref="#dd0000"> NEW CIRCULAR
+                        SOFA "VELA"
+                        <span>by Ramon Esteve</span>
+                    </a></p>
+
+            </div>
+
+
+            <img src="img/carousel1.jpg"
+                 alt="NEW CIRCULAR SOFA " VELA"">
+
+
+        </div>
+
+
+        <div class="item align_left">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    <a href="http://www.vondom.com/collections/delta/" class="hovercolor" ref="#dd0000"> THE "DELTA"
+                        COLLECTION
+                        <span>by Jorge Pensi</span>
+                    </a></p>
+
+            </div>
+
+
+            <img src="img/carousel1.jpg"
+                 alt="THE " DELTA" COLLECTION">
+        </div>
+        <div class="item align_left">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    <a href="http://www.vondom.com/collections/faz/" class="hovercolor" ref="#dd0000"> THE "FAZ"
+                        COLLECTION
+                        <span>by Ramon Esteve</span>
+                    </a></p>
+
+            </div>
+
+
+            <img src="img/carousel1.jpg"
+                 alt="THE " FAZ" COLLECTION">
+
+
+        </div>
+
+
+        <div class="item align_left">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    <a href="http://www.vondom.com/collections/wall-street/" class="hovercolor" ref="#dd0000"> THE "WALL
+                        STRET" COLLECTION
+                        <span>by Eugeni Quitllet</span>
+                    </a></p>
+
+            </div>
+
+
+            <img src="img/carousel1.jpg"
+                 alt="THE " WALL STRET" COLLECTION">
+
+
+        </div>
+
+
+        <div class="item align_left">
+
+
+            <div class="texto-slider ">
+                <p class="type_blenda"></p>
+                <p class="type_bebasneue">
+
+                    <a href="http://www.vondom.com/collections/brooklyn/" class="hovercolor" ref="#dd0000"> THE
+                        "BROOKLYN" COLLECTION
+                        <span>by Eugeni Quitllet</span>
+                    </a></p>
+
+            </div>
+
+
+            <img src="img/carousel1.jpg"
+                 alt="THE " BROOKLYN" COLLECTION">
+
+
+        </div>
+
+
+    </div>
+
 
     <div id="scrolldown_icon" class="">
         <div class="mouse">
@@ -89,111 +275,135 @@
     </div>
 </header>
 
-    <div ui-view></div>
+<div ui-view></div>
 
-    <footer>
+<footer>
 
-        <div class="content">
-            <nav>
-                <ul class="principal">
-                    <li><a href="categories/index.html">products</a></li>
-                    <li><a href="collections/index.html">collections</a></li>
-                    <li><a href="atmospheres/index.html">atmospheres</a></li>
-                    <li><a href="designers/index.html">designers</a></li>
-                    <li><a href="press/index.html">Press Room</a></li>
-                    <li><a href="contact/index.html">Contact</a></li>
-                    <li><a href="news/index.html">News</a></li>
-                </ul>
-            </nav>
-            <div class="fila-2">
-                <div class="col logos">
-                    <div class="col col-4">
-                        <a href="#subscribe" class="open_popup toggle-lightbox" ref="box_newsletter">
-                            <span class="icon-newsletter"></span>
+    <div class="content">
+        <nav>
+            <ul class="principal">
+                <li><a href="categories/index.html">products</a></li>
+                <li><a href="collections/index.html">collections</a></li>
+                <li><a href="atmospheres/index.html">atmospheres</a></li>
+                <li><a href="designers/index.html">designers</a></li>
+                <li><a href="press/index.html">Press Room</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
+                <li><a href="news/index.html">News</a></li>
+            </ul>
+        </nav>
+        <div class="fila-2">
+            <div class="col logos">
+                <div class="col col-4">
+                    <a href="#subscribe" class="open_popup toggle-lightbox" ref="box_newsletter">
+                        <span class="icon-newsletter"></span>
 
-                            <p class="pie">Subscribe <br/>Newletter</p>
-                        </a>
-                    </div>
-                    <div class=" group"></div>
-
+                        <p class="pie">Subscribe <br/>Newletter</p>
+                    </a>
                 </div>
-                <div class="col social">
-                    <div class="col col-3">
-                        <a href="https://twitter.com/VONDOMSpain" target="_blank"><span
-                            class="icon-social icon-twitter"></span></a>
-                    </div>
-                    <div class="col col-3">
-                        <a href="https://es-es.facebook.com/pages/VONDOM/186212044797295" target="_blank"><span
-                            class="icon-social icon-facebook"></span></a>
-                    </div>
+                <div class=" group"></div>
 
-                    <div class="col col-3"><a href="http://instagram.com/vondomslu" target="_blank"><span
+            </div>
+            <div class="col social">
+                <div class="col col-3">
+                    <a href="https://twitter.com/VONDOMSpain" target="_blank"><span
+                            class="icon-social icon-twitter"></span></a>
+                </div>
+                <div class="col col-3">
+                    <a href="https://es-es.facebook.com/pages/VONDOM/186212044797295" target="_blank"><span
+                            class="icon-social icon-facebook"></span></a>
+                </div>
+
+                <div class="col col-3"><a href="http://instagram.com/vondomslu" target="_blank"><span
                         class="icon-social icon-instagram"></span></a></div>
 
-                    <div class="col col-3"><a href="http://www.pinterest.com/vondom/" target="_blank"><span
+                <div class="col col-3"><a href="http://www.pinterest.com/vondom/" target="_blank"><span
                         class="icon-social icon-pinterest"></span></a></div>
 
-                    <div class="section group">
-                        <p class="pie_social">Bored? Socialize!!</p>
-                    </div>
-                </div>
-
-                <div class="col frase">
-                    <div class="box"><a href="#subscribe" class="open_popup toggle-lightbox" ref="box_newsletter">contact
-                    us, follow us, love us!</a></div>
+                <div class="section group">
+                    <p class="pie_social">Bored? Socialize!!</p>
                 </div>
             </div>
-            <div class="clear"></div>
-            <div class="section group creds">
 
-                <div class="col  span_6_of_12 ivace">
-                    <img src="img/temp.jpg" style="max-width:180px; margin-right: 15px; margin-top: 10px;" />
-                    <p>Empresa VONDOM, S.L.U. ha participado en la Misión Comercial a Taiwán, y ha contado con el apoyo de ICEX, así como con la cofinanciación de fondos europeos FEDER, habiendo contribuido según la medida de los mismos, al crecimiento económico de esta empresa, su región y de España en su conjunto”</p>
-                    <div class="clear"></div>
-                </div>
+            <div class="col frase">
+                <div class="box"><a href="#subscribe" class="open_popup toggle-lightbox" ref="box_newsletter">contact
+                    us, follow us, love us!</a></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="section group creds">
 
-                <div class="col  span_6_of_12 iso">
-                    <img src="img/temp.jpg" />
-                    <p class="pie">Copyright &copy; VONDOM S.L.U. 2017. All rights reserved.<br/> Avda. de Valencia / 46891 Palomar, Valencia - Spain <br/> t. <a href="tel:+34 962 398 486">+34 962 398 486</a> - f. +34 962 900 501 / <a href="mailto:info@vondom.com">info@vondom.com</a></p>
-                </div>
+            <div class="col  span_6_of_12 ivace">
+                <img src="img/temp.jpg" style="max-width:180px; margin-right: 15px; margin-top: 10px;"/>
+                <p>Empresa VONDOM, S.L.U. ha participado en la Misión Comercial a Taiwán, y ha contado con el apoyo de
+                    ICEX, así como con la cofinanciación de fondos europeos FEDER, habiendo contribuido según la medida
+                    de los mismos, al crecimiento económico de esta empresa, su región y de España en su conjunto”</p>
+                <div class="clear"></div>
+            </div>
 
+            <div class="col  span_6_of_12 iso">
+                <img src="img/temp.jpg"/>
+                <p class="pie">Copyright &copy; VONDOM S.L.U. 2017. All rights reserved.<br/> Avda. de Valencia / 46891
+                    Palomar, Valencia - Spain <br/> t. <a href="tel:+34 962 398 486">+34 962 398 486</a> - f. +34 962
+                    900 501 / <a href="mailto:info@vondom.com">info@vondom.com</a></p>
             </div>
 
         </div>
 
-    </footer>
+    </div>
 
-    <!-- build:js js/libs.min.js -->
-    <script src="assets/js/modernizr.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/cp-jquery.js"></script>
-    <script src="assets/js/jquery.countdown.js"></script>
-    <script src="assets/js/lightbox.min.js"></script>
-    <script src="assets/js/outdatedbrowser.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-animate/angular-animate.js"></script>
-    <script src="../bower_components/angular-resource/angular-resource.js"></script>
-    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="../bower_components/angular-touch/angular-touch.js"></script>
-    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
-    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-    <!-- endbuild -->
+</footer>
 
-    <!-- build:js js/app.min.js -->
-    <script src="assets/js/my-jquery.js"></script>
-    <script src="assets/js/revealOnScrool.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/app-routes.js"></script>
-    <script src="components/home/homeController.js"></script>
-    <script src="components/catalog/catalogController.js"></script>
-    <script src="components/contact/contactController.js"></script>
-    <!-- endbuild -->
+<div id="back_to_top_actions">
+    <span></span>
+    <a href="#" class="back_to_top"></a>
+</div>
 
+
+<div id="cookie_box">
+
+    <h4>Everybody <br/><img src="http://www.vondom.com/wp-content/themes/vondom/images/ico_heart.png" class="heart"/>cookies!
+    </h4>
+    <p class="type_OpenSans">This site uses cookies to store <br/>information on your computer.</p>
+
+    <p class="type_OpenSans"><a href="http://www.vondom.com/cookies-policy/" target="_blank">Read cookie policy</a></p>
+
+    <a href="#" class="accept cookies_ok"><img src="http://www.vondom.com/wp-content/themes/vondom/images/accept.png"/></a>
+    <a href="#" class="refuse cookies_no"><img
+            src="http://www.vondom.com/wp-content/themes/vondom/images/deny.png"/></a>
+
+</div>
+
+<!-- build:js js/libs.min.js -->
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+<script src="../bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="assets/js/outdatedbrowser.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.multiselect.js"></script>
+<script src="assets/js/lightbox.min.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/jquery.countdown.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../bower_components/angular-touch/angular-touch.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="assets/js/my-jquery.js"></script>
+<script src="assets/js/cp-jquery.js"></script>
+<script src="assets/js/revealOnScrool.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/app.min.js -->
+<script src="js/app.js"></script>
+<script src="js/app-routes.js"></script>
+<script src="components/home/homeController.js"></script>
+<script src="components/catalog/catalogController.js"></script>
+<script src="components/contact/contactController.js"></script>
+<!-- endbuild -->
 </body>
 
 </html>
