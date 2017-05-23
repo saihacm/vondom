@@ -250,7 +250,6 @@ $(document).on('click','.cookies_ok',function(){
 	
 
 	$('#slider-home').css({'opacity':1});
-   	$(".multiselect").multiselect(); 
 	
     $(window).load(function(){
 		$("#slider-home").animate({'opacity':1},1000,"swing" );
