@@ -18,7 +18,28 @@ angular.module('angularGruntSeed')
                 url: '/contact',
                 templateUrl: 'components/contact/contact.html',
                 controller: 'ContactController'
+            })
+            .state('categories', {
+                url: '/categories',
+                templateUrl: 'components/categories/categories.html',
+                controller: 'CategoriesController'
+            })
+            .state('about', {
+                url: '/about',
+                templateUrl: 'components/about/about.html',
+                controller: 'AboutController'
+            })
+            .state('collections', {
+                url: '/collections',
+                templateUrl: 'components/collections/collections.html',
+                controller: 'CollectionController'
+            })
+            .state('collectionsdetail', {
+                url: '/collections/{id}',
+                templateUrl: 'components/detail/detail-collection.html',
+                controller: 'DetailCollectionController'
             });
+    
 
         $urlRouterProvider.otherwise('/home');
     });
