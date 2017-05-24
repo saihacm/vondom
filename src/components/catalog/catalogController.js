@@ -3,7 +3,7 @@
 angular.module('angularGruntSeed')
 
     .controller('CatalogController', ['$scope',
-        function ($scope, gridService) {
-
+        function ($scope) {
+            console.log(123);
         }
     ]);
