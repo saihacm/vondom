@@ -13,7 +13,7 @@ angular.module('angularGruntSeed')
                 url: '/catalogs',
                 templateUrl: 'components/catalog/catalog.html',
                 controller: 'CatalogController'
-            })
+            }) 
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'components/contact/contact.html',
@@ -38,6 +38,16 @@ angular.module('angularGruntSeed')
                 url: '/collections/{id}',
                 templateUrl: 'components/detail/detail-collection.html',
                 controller: 'DetailCollectionController'
+            })
+            .state('news', {
+                url: '/news',
+                templateUrl: 'components/news/news.html',
+                controller: 'NewsController'
+            })
+            .state('atmosphe', {
+                url: '/atmosphe',
+                templateUrl: 'components/atmosphe/atmosphe.html',
+                controller: 'AtmospheController'
             });
     
 
