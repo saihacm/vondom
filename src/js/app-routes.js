@@ -24,6 +24,16 @@ angular.module('angularGruntSeed')
                 templateUrl: 'components/categories/categories.html',
                 controller: 'CategoriesController'
             })
+            .state('subcategories', {
+                url: '/subcategories/{id}',
+                templateUrl: 'components/subcategories/subcategories.html',
+                controller: 'SubCategoriesController'
+            })
+            .state('product', {
+                url: '/product/{id}',
+                templateUrl: 'components/product/product.html',
+                controller: 'ProductController'
+            })
             .state('about', {
                 url: '/about',
                 templateUrl: 'components/about/about.html',

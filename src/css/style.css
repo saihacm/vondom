@@ -6062,6 +6062,39 @@ div.wpcf7 {
     background-color: #AEA78B;
 }
 
+.tab-content > .active {
+    display: block;
+    padding: 40px 40px;
+}
+
+.test-ul li {
+    padding: 10px;
+}
+
+.product-relative {
+    padding: 20px 0px;
+}
+
+#cookie_box.cookie-style h4 {
+    font-family: "minion", serif;
+}
+
+.home-style .imagen-typologi img {
+    position: relative;
+    width: 80%;
+    height: auto;
+    width: 260px;
+    object-fit: cover;
+}
+
+header nav .menu-principal tr:last-child td a:focus {
+    color: white;
+}
+
+form.well.well-style{
+    text-align: center;
+}
+
 @media only screen and (min-width: 1300px) {
 
     .landing > div > h1 {

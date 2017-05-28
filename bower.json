@@ -12,6 +12,7 @@
     "angular-ui-router": "^1.0.3",
     "angular-bootstrap": "~0.14.3",
     "owl.carousel": "^2.2.1",
-    "fastclick": "^1.0.6"
+    "fastclick": "^1.0.6",
+    "bootstrap": "^3.3.7"
   }
 }

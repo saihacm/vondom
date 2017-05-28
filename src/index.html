@@ -21,45 +21,23 @@
 <body ng-controller="mainController">
 <div id="mobile-menu">
     <ul>
-        <li><a href="http://www.vondom.com/">Home</a></li>
-        <li><a href="" class="has_submenu">We are!</a>
-            <ul class="submenu">
-                <li><a href="#" class="back">We are!!</a></li>
-                <li><a href="http://www.vondom.com/about/">About</a></li>
-                <li><a href="http://www.vondom.com/designers/">Designers</a></li>
-                <li><a href="http://www.vondom.com/event/">Events</a></li>
-                <li><a href="http://www.vondom.com/new-flagship-store-miami/">New Flagship Store Miami</a></li>
-            </ul>
+        <li><a class="go-state" ui-sref="home">Home</a></li>
+        <li><a class="go-state" ui-sref="about">We are!</a>
         </li>
-        <li><a href="" class="has_submenu">Products</a>
+        <li><a ui-sref="categories" class="has_submenu">Products</a>
             <ul class="submenu">
                 <li><a href="#" class="back">Products</a></li>
-                <li><a href="http://www.vondom.com/categories/">Categories</a></li>
-                <li><a href="http://www.vondom.com/collections/">Collections</a></li>
-                <li><a href="http://www.vondom.com/catalogs/">Catalogs</a></li>
+                <li><a class="go-state" ui-sref="categories">Categories</a></li>
+                <li><a class="go-state" ui-sref="collections">Collections</a></li>
             </ul>
         </li>
-        <li><a href="http://www.vondom.com/vondom-news/">News</a></li>
+        <li><a class="go-state" ui-sref="news">News</a></li>
 
-
-        <li><a href="http://www.vondom.com/atmospheres/">Atmospheres</a></li>
-        <li><a href="http://www.vondom.com/vondom-tv/">Video</a></li>
-        <li><a href="http://www.vondom.com/vondom-music/">Music</a></li>
-
-        <li><a href="" class="has_submenu">Downloads</a>
-            <ul class="submenu">
-                <li><a href="#" class="back">Downloads</a></li>
-                <li><a href="http://www.vondom.com/press/">Press Room</a></li>
-                <li><a href="http://www.vondom.com/downloads/">Professionals</a></li>
-            </ul>
+        <li><a class="go-state" ui-sref="catalog">Downloads</a>
         </li>
 
 
-        <li><a href="http://www.vondom.com/contact/">Contact</a></li>
-        <li class="lang-selector">
-            <a href="http://www.vondom.com/?l=en">EN</a> / <a href="http://www.vondom.com/es">ES / <a
-                href="http://www.vondom.com/fr?l=fr">FR</a>
-        </li>
+        <li><a class="go-state" ui-sref="contact">Contact</a></li>
     </ul>
 
     <a href="#" id="close_mobile-menu"><img
@@ -81,7 +59,7 @@
             <table class="menu-principal">
                 <tbody>
                 <tr>
-                    <td colspan="5"></td>
+                    <td colspan="4"></td>
 
                     <td><a href="#search" class="toggle-search uppertext">search </a>
                         <form method="get" id="search_form" action="http://www.vondom.com/"><input name="s"
@@ -93,28 +71,22 @@
                 </tr>
                 <tr class="fila2">
                     <td class="logo_td">
-                        <a href="index.html"><img src="img/temp.jpg"/></a>
+                        <a ui-sref="home"><img src="img/temp.jpg"/></a>
                     </td>
-                    <td><a href="#">We are!</a>
-                        <ul class="submenu">
-                            <li><a href="about/index.html">About</a></li>
-                        </ul>
+                    <td><a ui-sref="about">We are!</a>
                     </td>
                     <td>
-                        <a href="#">Products</a>
+                        <a ui-sref="categories">Products</a>
                         <ul class="submenu">
-                            <li><a href="categories/index.html">Categories</a></li>
-                            <li><a href="collections/index.html">Collections</a></li>
+                            <li><a ui-sref="categories">Categories</a></li>
+                            <li><a ui-sref="collections">Collections</a></li>
                         </ul>
                     </td>
-                    <td><a href="vondom-news/index.html">News</a>
+                    <td><a ui-sref="news">News</a>
                     </td>
-                    <td><a href="#">Downloads</a>
-                        <ul class="submenu">
-                            <li><a href="catalogs/index.html">Catalogs</a></li>
-                        </ul>
+                    <td><a ui-sref="catalog">Downloads</a>
                     </td>
-                    <td><a href="contact/index.html">Contact</a></td>
+                    <td><a ui-sref="contact">Contact</a></td>
                 </tr>
                 </tbody>
             </table>
@@ -271,10 +243,10 @@
     <div class="content">
         <nav>
             <ul class="principal">
-                <li><a href="categories/index.html">products</a></li>
-                <li><a href="collections/index.html">collections</a></li>
-                <li><a href="contact/index.html">Contact</a></li>
-                <li><a href="news/index.html">News</a></li>
+                <li><a ui-sref="categories">products</a></li>
+                <li><a ui-sref="collections">collections</a></li>
+                <li><a ui-sref="contact">Contact</a></li>
+                <li><a ui-sref="news">News</a></li>
             </ul>
         </nav>
         <div class="fila-2">
@@ -345,17 +317,16 @@
 </div>
 
 
-<div id="cookie_box">
+<div id="cookie_box" class="cookie-style">
 
-    <h4>Everybody <br/><img src="http://www.vondom.com/wp-content/themes/vondom/images/ico_heart.png" class="heart"/>cookies!
+    <h4>Chào bạn <br/><img src="http://www.vondom.com/wp-content/themes/vondom/images/ico_heart.png" class="heart"/>You!
     </h4>
-    <p class="type_OpenSans">This site uses cookies to store <br/>information on your computer.</p>
+    <p class="type_OpenSans">Đã đến với website của chúng tôi!</p>
 
-    <p class="type_OpenSans"><a href="http://www.vondom.com/cookies-policy/" target="_blank">Read cookie policy</a></p>
-
-    <a href="#" class="accept cookies_ok"><img src="http://www.vondom.com/wp-content/themes/vondom/images/accept.png"/></a>
-    <a href="#" class="refuse cookies_no"><img
-            src="http://www.vondom.com/wp-content/themes/vondom/images/deny.png"/></a>
+    <p class="type_OpenSans"><a ui-sref="about" target="_blank">Xem giới thiệu về chúng
+        tôi</a></p>
+    <p class="type_OpenSans"><a ui-sref="collections" target="_blank">hoặc đến với bộ sưu tập</a>
+    </p>
 
 </div>
 
@@ -395,6 +366,8 @@
 <script src="components/detail/detailCollectionController.js"></script>
 <script src="components/news/newsController.js"></script>
 <script src="components/atmosphe/atmospheController.js"></script>
+<script src="components/subcategories/subcategoriesController.js"></script>
+<script src="components/product/productController.js"></script>
 <!-- endbuild -->
 </body>
 
