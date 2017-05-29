@@ -49,7 +49,7 @@
 <header class="portada">
     <nav class="mobileHeader">
         <div class="content">
-            <a href="index.html" class="logo"><img src="img/temp.jpg"/></a>
+            <a href="index.html" class="logo"><img src="img/logo.png"/></a>
             <a href="#" class="menu_icon"><img src="img/images/menu_icon.png"/></a>
         </div>
     </nav>
@@ -59,7 +59,7 @@
             <table class="menu-principal">
                 <tbody>
                 <tr>
-                    <td colspan="4"></td>
+                    <td colspan="5"></td>
 
                     <td><a href="#search" class="toggle-search uppertext">search </a>
                         <form method="get" id="search_form" action="http://www.vondom.com/"><input name="s"
@@ -71,16 +71,14 @@
                 </tr>
                 <tr class="fila2">
                     <td class="logo_td">
-                        <a ui-sref="home"><img src="img/temp.jpg"/></a>
+                        <a ui-sref="home"><img src="img/logo.png"/></a>
                     </td>
                     <td><a ui-sref="about">We are!</a>
                     </td>
                     <td>
                         <a ui-sref="categories">Products</a>
-                        <ul class="submenu">
-                            <li><a ui-sref="categories">Categories</a></li>
-                            <li><a ui-sref="collections">Collections</a></li>
-                        </ul>
+                    </td>
+                    <td><a ui-sref="collections">Collections</a>
                     </td>
                     <td><a ui-sref="news">News</a>
                     </td>
@@ -321,10 +319,9 @@
 
     <h4>Chào bạn <br/><img src="http://www.vondom.com/wp-content/themes/vondom/images/ico_heart.png" class="heart"/>You!
     </h4>
-    <p class="type_OpenSans">Đã đến với website của chúng tôi!</p>
+    <p class="type_OpenSans"><a ui-sref="news" target="_blank">Xem tin tức mới nhất.</a></p>
 
-    <p class="type_OpenSans"><a ui-sref="about" target="_blank">Xem giới thiệu về chúng
-        tôi</a></p>
+    <p class="type_OpenSans"><a ui-sref="categories" target="_blank">Xem danh mục sản phẩm.</a></p>
     <p class="type_OpenSans"><a ui-sref="collections" target="_blank">hoặc đến với bộ sưu tập</a>
     </p>
 
