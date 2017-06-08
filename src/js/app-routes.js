@@ -2,7 +2,15 @@
 
 angular.module('angularGruntSeed')
 
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, NgAdminConfigurationProvider) {
+        var nga = NgAdminConfigurationProvider;
+        // create an admin application
+        var admin = nga.application('My First Admin');
+        // more configuration here later
+        // ...
+        // attach the admin application to the DOM and run it
+        nga.configure(admin);
+        
         $stateProvider
             .state('home', {
                 url: '/home',
@@ -58,8 +66,17 @@ angular.module('angularGruntSeed')
                 url: '/atmosphe',
                 templateUrl: 'components/atmosphe/atmosphe.html',
                 controller: 'AtmospheController'
+            })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'components/auth/login/login.html',
+                controller: 'LoginController'
+            })
+            .state('admin', {
+                url: '/admin',
+                templateUrl: 'components/auth/admin/admin.html',
+                controller: 'AdminController'
             });
-    
 
         $urlRouterProvider.otherwise('/home');
     });

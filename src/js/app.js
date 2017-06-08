@@ -6,7 +6,8 @@ angular.module('angularGruntSeed', [
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ng-admin'
 ])
     .controller('mainController', ['$scope',
         function ($scope, gridService) {

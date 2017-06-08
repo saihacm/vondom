@@ -8,6 +8,7 @@
     <!-- build:css css/modules.css -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../bower_components/ng-admin/build/ng-admin.min.css" rel="stylesheet">
     <!-- endbuild -->
 
     <link href="css/style.css" rel="stylesheet">
@@ -15,6 +16,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/outdatedbrowser.min.css" rel="stylesheet">
     <link href="css/genericons.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 
 </head>
 
@@ -326,7 +328,7 @@
     </p>
 
 </div>
-
+<div ui-view="ng-admin"></div>
 <!-- build:js js/libs.min.js -->
 <script src="assets/js/modernizr.js"></script>
 <script src="assets/js/jquery-1.9.1.min.js"></script>
@@ -346,6 +348,7 @@
 <script src="../bower_components/fastclick/lib/fastclick.js"></script>
 <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/ng-admin/build/ng-admin.min.js"></script>
 <script src="assets/js/my-jquery.js"></script>
 <script src="assets/js/cp-jquery.js"></script>
 <script src="assets/js/revealOnScrool.js"></script>
@@ -365,6 +368,8 @@
 <script src="components/atmosphe/atmospheController.js"></script>
 <script src="components/subcategories/subcategoriesController.js"></script>
 <script src="components/product/productController.js"></script>
+<script src="components/auth/login/loginController.js"></script>
+<script src="components/auth/admin/adminController.js"></script>
 <!-- endbuild -->
 </body>
 
